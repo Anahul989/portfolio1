@@ -1,79 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body, html {
-  height: 100%;
-  font-family: 'Poppins', sans-serif;
+header {
+  background: blue;
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-body {
-  background: url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+header .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 30px;
 }
 
-.login-container {
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  width: 300px;
+header h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav ul li a {
   color: white;
-  text-align: center;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-.login-box h2 {
+nav ul li a:hover {
+  color: yellow;
+}
+
+section {
+  padding: 60px 30px;
+  background: white;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 1000px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  font-size: 24px;
   margin-bottom: 20px;
+  color: #4a90e2;
 }
 
-.login-box input {
-  width: 100%;
-  padding: 12px 15px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  font-size: 14px;
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
-.login-box input::placeholder {
-  color: #eee;
+.skills-list li {
+  background: #e0f7fa;
+  color: #00796b;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
-.login-box button {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  background-color: #4a90e2;
-  color: white;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+.skills-list li:hover {
+  background: #b2ebf2;
+  transform: scale(1.05);
 }
 
-.login-box button:hover {
-  background-color: #357ab7;
+.project {
+  margin-bottom: 25px;
+  background: #f9f9f9;
+  padding: 15px 20px;
+  border-left: 5px solid #4a90e2;
+  border-radius: 10px;
+  transition: 0.3s ease;
 }
 
-.signup {
-  margin-top: 15px;
-  font-size: 14px;
+.project:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.signup a {
-  color: #ffdd57;
+a {
   text-decoration: none;
 }
 
-.signup a:hover {
+a:hover {
+  color: #4a90e2;
   text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #4a90e2;
+  color: white;
+  margin-top: 40px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
 }
